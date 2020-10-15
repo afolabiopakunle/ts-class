@@ -1,12 +1,12 @@
 var Point = /** @class */ (function () {
-    function Point() {
+    function Point(x, y) {
+        this.x = x;
+        this.y = y;
     }
     Point.prototype.draw = function () {
         console.log("X is: " + this.x + "\nY is: " + this.y);
     };
     return Point;
 }());
-var newPoint = new Point();
-newPoint.x = 35;
-newPoint.y = 45;
+var newPoint = new Point(23, 12);
 newPoint.draw();

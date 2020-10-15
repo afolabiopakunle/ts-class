@@ -5,11 +5,13 @@ class Point {
     draw() {
         console.log("X is: " + this.x + "\nY is: " + this.y)
     }
+
+    constructor(x: number, y: number) {
+        this.x = x;
+        this.y = y;
+    }
 }
 
-let newPoint = new Point();
-
-newPoint.x = 35;
-newPoint.y = 45;
+let newPoint = new Point(23, 12);
 
 newPoint.draw()
