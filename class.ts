@@ -1,11 +1,6 @@
-class Point {
-    draw() {
-        console.log("X is: " + this.x + "\nY is: " + this.y)
-    }
 
-    constructor(private x: number, public y: number) {}
-}
+import { Point } from "./point"
 
-let newPoint = new Point(23, 12);
+let newPoint = new Point(3, 12);
 
 newPoint.draw()
