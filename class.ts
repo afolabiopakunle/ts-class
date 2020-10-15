@@ -1,15 +1,9 @@
 class Point {
-    x: number;
-    y: number;
-
     draw() {
         console.log("X is: " + this.x + "\nY is: " + this.y)
     }
 
-    constructor(x: number, y: number) {
-        this.x = x;
-        this.y = y;
-    }
+    constructor(private x: number, public y: number) {}
 }
 
 let newPoint = new Point(23, 12);
